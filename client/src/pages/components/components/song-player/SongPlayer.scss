@@ -1,0 +1,115 @@
+@import "../../../../App.scss";
+.song-player-container {
+  position: fixed;
+  bottom: 0;
+  width: calc(100vw - 240px);
+  height: 140px;
+  background-color: var(--purple10);
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  & .song-player-info {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    & .song-player-song-image {
+      height: 70px;
+      object-fit: cover;
+      object-position: center;
+    }
+    & .song-player-song-info {
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      @include textBase;
+      color: var(--purple7);
+    }
+  }
+  & .playerComponent-container {
+    height: 100%;
+    width: 65%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    & .song-meter{
+      width: 70%;
+      margin: 10px auto;
+    }
+    & .playerComponent-btn-container{
+      width: 100%;
+      height: 50%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      & .player-icon-btn-container{
+        margin: 0px 40px;
+      }
+    }
+  }
+  & .playerComponent-btn-container{
+    padding: 10px 20px;
+    width: 15%;
+    height: 100%;
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    & .playerComponent-btn-container-top{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        & .player-component-btn-top{
+            margin-left: 20px;
+        }
+    }
+    & .player-component-btn-bottom{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+  }
+  & .playerComponent-player-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & .player-range{
+      width: 85%;
+    }
+    span{
+      font-family: var(--regularFont);
+      color: var(--white100);
+    }
+  }
+}
+
+input[type='range']{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  // color: red;
+  filter: blur(3px);
+  // background-color: aqua;
+  clip:unset
+}
+
+.mrt1{
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+

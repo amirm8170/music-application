@@ -1,0 +1,117 @@
+@import '../../../App.scss';
+.login-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg2);
+  & .login-logo {
+    position: absolute;
+    width: 100px;
+    height: 59.18px;
+    left: 40px;
+    top: 40px;
+  }
+  & .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 32px 32px 40px;
+    gap: 24px;
+    width: 464px;
+    height: 584px;
+    border-radius: 10px;
+    & .login-box-title {
+      font-family: var(--regularFont);
+      font-style: normal;
+      font-weight: 510;
+      font-size: 24px;
+      line-height: 16px;
+      color: var(--purple7);
+      margin-bottom: 40px;
+    }
+    & .login-box-text {
+      font-family: var(--regularFont);
+      color: var(--purple6);
+      font-style: normal;
+      font-weight: 510;
+      font-size: 16px;
+      line-height: 16px;
+      &.selfStart {
+        align-self: flex-start;
+      }
+    }
+    & .login-rememberbox-container {
+      align-self: flex-start;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: -5px;
+      margin-bottom: -5px;
+      & .login-checkBox {
+        align-self: flex-start;
+        width: 16px;
+        height: 16px;
+        background: var(--white100);
+        border: 1px solid var(--yellow2);
+        border-radius: 5px;
+        margin-right: 10px;
+      }
+      & .login-checkBox-text {
+        font-family: var(--regularFont);
+        font-style: normal;
+        font-weight: 510;
+        font-size: 12px;
+        line-height: 16px;
+        color: var(--purple6);
+      }
+    }
+    & .login-box-btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 16px 24px;
+      width: 400px;
+      height: 48px;
+      background: var(--yellow1);
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: 0.3s;
+      font-family: var(--regularFont);
+      &:hover {
+        background-color: var(--yellow3);
+      }
+      & .loading-container{
+        @include loadingContainer
+      }
+    }
+    & .login-box-btn2 {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 16px 24px;
+      width: 400px;
+      height: 48px;
+      font-family: var(--regularFont);
+      background: var(--white100);
+      border: 1px solid var(--yellow1);
+      border-radius: 10px;
+      transition: 0.3s;
+      &:hover {
+        background-color: var(--yellow3);
+      }
+      & .loading-container{
+        @include loadingContainer
+      }
+    }
+  }
+}

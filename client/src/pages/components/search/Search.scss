@@ -1,0 +1,24 @@
+.search-container {
+  width: 100%;
+  min-height: calc(100vh - 72px);
+  background-color: violet;
+  padding: 20px 30px;
+  padding-bottom: 0px;
+  padding-left: 60px;
+  & .search-title {
+    font-family: var(--regularFont);
+    font-style: normal;
+    font-weight: 590;
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--purple10);
+  }
+  & .search-box-container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+  }
+}

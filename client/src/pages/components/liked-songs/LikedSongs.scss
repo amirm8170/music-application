@@ -1,0 +1,8 @@
+@import "../../../App.scss";
+.liked-songs-container {
+  width: 100%;
+  height: calc(100vh - 72px);
+  & .home-loading-container {
+    @include loadingContainer;
+  }
+}

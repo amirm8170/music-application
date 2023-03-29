@@ -1,0 +1,93 @@
+.side-container {
+  padding-top: 40px;
+  position: fixed;
+  width: 240px;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(
+    188.84deg,
+    #2a0052 6.73%,
+    #3b0440 23.78%,
+    #471952 37.51%,
+    #421359 47.87%,
+    #390868 69.59%,
+    #0c3d77 99.57%
+  );
+  & .side-logo {
+    width: 100px;
+    height: 60px;
+    margin-left: 24px;
+  }
+  & .side-items-container {
+    width: 100%;
+    margin-top: 77px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    & .site-items {
+      width: 100%;
+      margin: 10px 0px;
+      height: 40px;
+      border-radius: 10px;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      transition: 0.2s;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      cursor: pointer;
+      &.active {
+        background: rgba(164, 140, 187, 0.3);
+      }
+      & .side-item {
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: 16px;
+        color: var(--purple4);
+        font-family: sfProR;
+        font-weight: 510;
+        &.mymusic {
+          margin-left: 0;
+          margin-right: 16px;
+          padding: 8px 24px;
+          padding-right: 0px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+        }
+      }
+      & .myMusic-icon-container {
+        transition: 0.3s;
+        &.show {
+          transform: rotate(90deg);
+        }
+      }
+      & .site-items-link {
+        width: 100%;
+        height: 100%;
+        padding: 8px 24px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+      }
+    }
+  }
+  & .noMargin {
+    margin-top: 0;
+    transform: translateY(-20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    &.show {
+      transform: translateY(0px);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.carousel-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-shrink:0;
+  padding: 0px;
+  padding-top: 5px;
+  width: 48%;
+  height: 100%;
+  background: var(--white100);
+  border-radius: 10px;
+  margin-right: 2.5%;
+  margin-top: 10px;
+  & .carousel-item-image {
+    width: 95%;
+  }
+  & .carouse-info {
+    margin-top: 10px;
+    font-family: var(--regularFont);
+    font-style: normal;
+    font-weight: 510;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--purple7);
+  }
+}

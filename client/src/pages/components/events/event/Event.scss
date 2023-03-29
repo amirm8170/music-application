@@ -1,0 +1,86 @@
+.each-event-container {
+  width: 100%;
+  height: 100%;
+  background-color: goldenrod;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  & .each-event-image-container {
+    width: 100%;
+    height: 360px !important;
+    min-height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    & .each-event-image-img{
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  & .each-event-info-container {
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    background-color: var(--bg1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & .each-event-info-box {
+      background-color: var(--white100);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 32px 32px 40px;
+      width: 90%;
+      height: 285px;
+      border-radius: 20px;
+      & .each-event-info-box-title {
+        font-family: var(--boldFont);
+        font-style: bold;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 29px;
+        color: var(--purple8);
+      }
+      & .each-event-info-box-text {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        & .each-event-info-box-text-icon {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+        }
+        & .each-event-info-box-text-icon-text {
+          margin-left: 10px;
+          font-family: var(--regularFont);
+          font-style: normal;
+          font-weight: 510;
+          font-size: 24px;
+          line-height: 24px;
+          color: var(--purple8);
+        }
+      }
+    }
+    & .each-event-info-btn{
+        padding: 15px 130px;
+        background-color: var(--yellow1);
+        border: none;
+        outline: none;
+        transition: .3s;
+        border-radius: 10px;
+        margin-top: 20px;
+        align-self: flex-end;
+        transform: translateX(-60px);
+        &:hover{
+            background-color: var(--yellow2);
+        }
+    }
+  }
+}

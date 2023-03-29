@@ -1,0 +1,85 @@
+@import "../../App.scss";
+.top-bar-container {
+  @include flex;
+  width: calc(100vw - 240px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  justify-content: space-between;
+  padding: 12px 24px;
+  position: absolute;
+  height: 72px;
+  background: linear-gradient(180deg, #2a0052 0%, #550868 100%);
+  & .search-input-field{
+    margin-bottom: 0px
+  }
+  & .top-bar-auth-section {
+    @include textBase;
+    @include flex;
+    width: 180px;
+    justify-content: space-between;
+    color: var(--purple6);
+  }
+  & .top-bar-login {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px 24px;
+    gap: 10px;
+    // width: 120px;
+    height: 40px;
+    background: var(--yellow1);
+    border-radius: 30px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    color: var(--purple10);
+    cursor: pointer;
+  }
+  & .top-bar-profile {
+    position: relative;
+    cursor: pointer;
+    & .top-bar-profile-box{
+      position: absolute;
+      top: 70%;
+      right: 0;
+      width: 100px;
+      height: 0px;
+      background-color: var(--bg1);
+      z-index: 100;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: .3s;
+      &.show{
+        opacity: 1;
+        visibility: visible;
+        height: 100px;
+      }
+      & .top-bar-profile-box-btn{
+        background-color: var(--yellow1);
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .3s;
+        &:hover{
+          background-color: var(--yellow3);
+        }
+      }
+    }
+  }
+  & .top-bar-sign-up {
+    cursor: pointer;
+    font-family: var(--regularFont);
+    font-style: normal;
+    font-weight: 510;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--purple6);
+  }
+}

@@ -1,0 +1,17 @@
+@import '../../../App.scss';
+.song-container-empty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--purple7);
+  font-size: 36px;
+  line-height: 24px;
+  font-family: var(--regularFont);
+  font-weight: 510;
+}
+
+
+.home-loading-container{
+  @include loadingContainer
+}
